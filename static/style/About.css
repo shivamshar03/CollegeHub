@@ -1,0 +1,93 @@
+.about--section{
+    display: inline-block;
+    padding-top: 50 px;
+border: 20px;
+border-radius: 20px;
+background: #e587ec5c;
+font-size: 20px;
+margin: -30px;
+font-weight: 400;
+padding: 20px;
+padding-left: 40px;
+padding-bottom: 40px;
+box-shadow: 10px 10px 25px #722189;
+}
+.about-section{
+    display: inline-block;
+    padding-top: 50 px;
+
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.subtitle{
+    font-weight: 800;
+    color: rgb(185 228 235);
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+}
+.list-inline {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+
+}
+#about-me{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#About-about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom:25px;
+}
+.about-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.about-content{
+    display: block;
+    color: #698289;
+    text-align:-webkit-center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    
+    
+}
+@media only screen and (max-width: 600px) {
+    .about-content{
+        font-size: 4.3vw;
+        margin-right: 20px;
+    margin-left: 20px;
+    }
+    .subtitle{
+        font-size: 5.3vw;
+
+    }
+}

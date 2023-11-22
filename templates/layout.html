@@ -1,0 +1,251 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <title>College Jagat</title>
+  <meta data-n-head="ssr" charset="utf-8">
+  <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+  <meta data-n-head="ssr" data-hid="description" name="description"
+    content=" Welcome to College Jagat, your ultimate destination for all things college-related! Developed by Abhyudaya, the coding club of SVVV (Shri Vaishnav Vidyapeeth Vishwavidyalaya), we are dedicated to providing a comprehensive and insightful platform that caters to the diverse needs of college students and enthusiasts.">
+  <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+
+  <link data-n-head="ssr" rel="icon" type="image/x-icon" href="{{ url_for('static', filename='image/logo.png')}}">
+  <link href="{{ url_for('static', filename='style/index.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/logo.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/mission.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/About.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/footer.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/contact.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/menu.css')}}" rel="stylesheet">
+  <script defer src="{{ url_for('static', filename='js/script.js')}}"></script>
+</head>
+
+<body>
+  <div>
+    <div>
+      <main>
+        <header id="Header">
+          <div class="hidden lg:block">
+            <div id="navbar"
+              class="fixed top-0 bg-transparent flex items-center justify-end w-full h-auto py-5 px-2 z-5 gradient-nav"
+              data-v-2d7d44d8>
+              <div class="logo z-6 absolute left-2" data-v-2d7d44d8>
+                <a href="/" data-v-2d7d44d8>
+                  <img src="{{ url_for('static', filename='image/logo.png')}}" alt=" Collage Jagat" class="w-70 h-full" data-v-2d7d44d8>
+                </a>
+              </div>
+              <div class="text-white flex justify-around text-sm lg:text-lg justify-self-end md:w-7/10" data-v-2d7d44d8>
+                <a id="Home">
+                  <div class="align-middle py-2 cursor-pointer btn color-change" data-v-2d7d44d8>
+                    <div data-v-2d7d44d8>
+                      Home
+                    </div>
+                  </div>
+                </a>
+                <a id="About" href="/about">
+                  <div class=" align-middle py-2 cursor-pointer btn color-change" data-v-2d7d44d8>
+                    <div data-v-2d7d44d8>
+                      About me
+                    </div>
+                  </div>
+                </a>
+                <a id="Contact">
+                  <div class=" py-2 cursor-pointer btn color-change" data-v-2d7d44d8>
+                    <div data-v-2d7d44d8>
+                      Contact
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-v-2d7d44d8>
+                  <div class="dropdown">
+                    <div class="align-middle py-2 cursor-pointer btn color-change" data-v-2d7d44d8>
+
+                      <div data-v-2d7d44d8>
+                        Menu
+                      </div>
+
+                      <div class="dropdown-content ">
+                        <a class="btn" data-v-2d7d44d8 href="/acadmic_calender">Acadmic Calendar</a>
+                        <a class="btn" data-v-2d7d44d8 href="/news">News Feed</a>
+                        <a class="btn" data-v-2d7d44d8 href="/busboard">Bus Board</a>
+                        <a class="btn" data-v-2d7d44d8 href="/events">Clubs and Events</a>
+                        <a class="btn" data-v-2d7d44d8 href="/lost-found">Lost and Found</a>
+                        <a class="btn" data-v-2d7d44d8 href="/community-chat">Community Chat</a>
+                        <a class="btn" data-v-2d7d44d8 href="/feedback">Feedback</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+                <div class="flex" data-v-2d7d44d8>
+                  <a href="https://dashboard. Collage Jagat.co.in/auth/login"
+                    class="flex bg-white rounded-3xl items-center text-black text-center flex px-6 cursor-pointer logIn"
+                    data-v-2d7d44d8>
+                    Dashboard
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:hidden">
+            <nav class="mobileNav fixed top-0 h-20 w-full z-5" data-v-10fafbb2>
+              <a href="#Header" class="active">
+                <img id="logo-mob" src="{{ url_for('static', filename='image/logo.png')}}" alt=" Collage Jagat" data-v-10fafbb2>
+              </a>
+              <!--<div class="text-white flex justify-around text-sm lg:text-lg justify-self-end md:w-7/10" data-v-2d7d44d8>
+                <div class="flex-mob" data-v-2d7d44d8>
+                  <a href="https://dashboard. Collage Jagat.co.in/auth/login" class="dashbord" data-v-2d7d44d8>
+                    Dashboard
+                  </a>
+                </div>
+                <style>
+                  .flex-mob {
+                    display: flex;
+                    padding-left: 300px;
+                    margin-top: -40px;
+                  }
+
+                  .dashbord {
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                    font-size: 20px;
+                    font-weight: 400;
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 20px;
+                    color: black;
+                    margin-top: -50px;
+                    margin-bottom: 50px;
+                    margin-right: 100px;
+                    padding: 15px
+                  }
+
+                  @media only screen and (max-width: 766px) {
+                    .dashbord {
+
+                      margin-right: 400px;
+
+
+                    }
+                  }
+
+                  @media only screen and (max-width: 566px) {
+                    .dashbord {
+
+                      display: none
+                    }
+                  }
+                </style>
+                
+              </div>
+              -->
+              <div class="topnav">
+                <div class="topnav-flex">
+
+                  <!-- Navigation links (hidden by default) -->
+                  <div id="myLinks" class="links">
+
+                    <a class="nav-links" data-v-2d7d44d8 href="/acadmic_calender">Acadmic Calender</a>
+                    <a class="nav-links" data-v-2d7d44d8 href="/news">News Feed</a>
+                    <a class="nav-links" data-v-2d7d44d8 href="/busboard">Bus Board</a>
+                    <a class="nav-links" data-v-2d7d44d8 href="/events">Clubs and Events</a>
+                    <a class="nav-links" data-v-2d7d44d8 href="/lost-found">Lost and Found</a>
+                    <a class="nav-links" data-v-2d7d44d8 href="/community-chat">Community Chat</a>
+                    <a class="nav-links" data-v-2d7d44d8 href="/feedback">Feedback</a>
+                    <a class="nav-links" data-v-2d7d44d8 href="/about">About Me</a>
+                  </div>
+                  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <button id="toggle" type="button"
+                      class="navbar-toggle bg-transparent select-none border-none focus:outline-none cursor-pointer fixed z-20 top-4 right-4 p-0"
+                      data-v-10fafbb2>
+                      <svg id="navBtn" viewBox="0 0 100 100" width="80" data-v-10fafbb2>
+                        <path
+                          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+                          class="line top" data-v-10fafbb2>
+                        </path>
+                        <path d="m 30,50 h 40" class="line middle" data-v-10fafbb2>
+
+                        </path>
+                        <path
+                          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+                          class="line bottom" data-v-10fafbb2>
+                        </path>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+
+{% block body %}  {% endblock %}
+
+
+
+
+<section id="Contact-us" style="padding-top: 10%;">
+    <div>
+      <div id="heading" data-v-3721fc03>
+        <h1 data-v-3721fc03>Contact Us</h1>
+        <h2 data-v-3721fc03>Contact Us</h2>
+      </div>
+      <div class="Contactbox">
+        <div class="contact-items">
+          <img class="img-contact" src="{{ url_for('static', filename='image/telephone-call.png')}}">
+          <h3 class="Contact-text">Phone No. : </h3>
+          <a class="Contact-text" href="tel: +916266061914"> +91 62660-61914</a>
+        </div>
+        <div class="contact-items">
+          <img class="img-contact" src="{{ url_for('static', filename='image/gmail.png')}}">
+          <h3 class="Contact-text">G-mail : </h3>
+          <a class="Contact-text" href="mailto:shivamshar0310@gmail.com"> collegejagat@gmail.com</a>
+        </div>
+        <div class="contact-items">
+          <img class="img-contact" src="{{ url_for('static', filename='image/whatsapp2.png')}}">
+          <h3 class="Contact-text">WhatsApp : </h3>
+          <a class="Contact-text" href="https://wa.me/6266061914?text=hii" target="_blank">click to Say hii</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <section id="footer" data-v-16e90b24>
+
+      <div class="social_heading" data-v-16e90b24>
+        <h2>Social Links</h2>
+      </div>
+      <div class="social_links" data-v-16e90b24>
+        <a href="https://www.facebook.com/ Collage Jagat/" target="_blank" data-v-16e90b24>
+          <img src="{{ url_for('static', filename='image/whatsapp.png')}}" alt="facebook Logo" class="icon fb" data-v-16e90b24>
+        </a>
+        <a href="https://www.instagram.com/ Collage Jagat/" target="_blank" data-v-16e90b24>
+          <img src="{{ url_for('static', filename='image/instagram2.png')}}" alt="instagram Logo" class="icon insta" data-v-16e90b24>
+        </a>
+        <a href="https://twitter.com/ Collage Jagat/" target="_blank" data-v-16e90b24>
+          <img src="{{ url_for('static', filename='image/twitter.png')}}" alt="twitter Logo" class="icon" data-v-16e90b24>
+        </a>
+        <a href="https://www.youtube.com/c/ Collage Jagat" target="_blank" data-v-16e90b24>
+          <img src="{{ url_for('static', filename='image/youtube.png')}}" alt="Youtube" class="icon" data-v-16e90b24>
+        </a>
+      </div>
+      <div data-v-16e90b24>
+        <p class="more_queries" data-v-16e90b24>
+          For more queries:
+          <a href="mailto: publicity@ Collage Jagat.in" data-v-16e90b24>Abhyudaya@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </footer>
+
+</main>
+</div>
+</div>
+
+</body>
+
+</html>

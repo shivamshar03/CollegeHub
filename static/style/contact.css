@@ -1,0 +1,118 @@
+#Contact-us{
+    padding-bottom: 100px;
+    margin-bottom: 2px;
+}
+
+#newsContact-us{
+    padding-bottom: 100px;
+    margin-bottom: 80px;
+
+}
+
+.Contactbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background: linear-gradient(107deg,#f3f6f726,rgb(255 14 46 / 49%), rgb(7 54 97));
+    margin-right: 250px;
+    margin-left: 250px;
+    border-radius: 20px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+.contact-items{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 20px;
+    align-items: center;
+    background: linear-gradient(238deg, #a0dbdb6b, rgb(7 54 97));
+    border-radius: 20px;
+    
+}
+.contact-items:hover{
+    box-shadow:  13px 15px 20px 11px #000;
+
+    .Contact-text{
+
+        font-size: 25px;
+        font-weight: 700;
+    
+    }
+
+}
+.img-contact{
+   height: 35px;
+}
+.Contact-text{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 1025px) {
+        .Contact-text{
+            font-size: 15px;
+            font-weight: 600;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: 10px;
+        }
+        .Contactbox{
+            margin-top: 15px;
+            margin-right: 150px;
+            margin-left: 150px;
+        }
+        .img-contact{
+            height: 30px;
+        
+        }
+}
+@media only screen and (max-width: 700px) {
+    .Contactbox{
+        margin-top: 10px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .img-contact{
+        height: 20px;
+    
+
+}
+.Contact-text{
+    font-size: 17px;
+    font-weight: 500;
+}
+}
+@media only screen and (max-width: 400px) {
+    .Contactbox{
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .img-contact{
+        height: 15px;
+    }
+
+    .Contact-text{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .contact-items{
+        margin-top: 25px;
+        margin-bottom: 3px;
+        padding: 15px;
+    }
+    .contact-items:hover{
+        box-shadow:  9px 13px 7px 2px #000;;
+    
+        .Contact-text{
+    
+            font-size: 15px;
+            font-weight: 500;
+        
+        }
+}

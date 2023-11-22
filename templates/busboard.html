@@ -1,0 +1,255 @@
+{% extends "layout.html" %}
+{% block body %}
+                <section id="bus-board" class="features " style="padding-top: 10%; margin-bottom: 3%;">
+                    <div id="heading" data-v-3721fc03>
+                        <h1 data-v-3721fc03>Bus Board</h1>
+                        <h2 data-v-3721fc03>Bus Board</h2>
+                    </div>
+                    <span >
+                      <h3 class="shift">Shift : {{bus_number['Shift']}}</h3>
+                      <h3 class="date">Date : {{bus_number['Date']}}</h3>
+                    </span>
+                    <div class="busboard">
+  
+                        <table class="bus-table">
+                          <tr>
+                            <th>Route</th>
+                            <th>Bus No.</th>
+                          </tr>
+                          <tr>
+                            <td>Tejaji Nagar</td>
+                            <td>{{bus_number['Tejaji Nagar']}}</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Rau</td>
+                            <td>{{bus_number['Rau']}}</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Rajendra Nagar</td>
+                            <td>{{bus_number['Rajendra Nagar']}}</td>
+                          </tr>
+                          <tr>
+                            <td>LIG</td>
+                            <td>{{bus_number['LIG']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Hawa Bangla</td>
+                            <td>{{bus_number['Hawa Bangla']}}</td>
+
+                          </tr>
+                          <tr>
+                            <td>RTO</td>
+                            <td>{{bus_number['RTO']}}</td>
+
+                          </tr>
+                          <tr>
+                            <td>Mhow Naka</td>
+                            <td>{{bus_number['Mhow Naka']}}</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Talawali</td>
+                            <td>{{bus_number['Talawali']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Sapna Sangita</td>
+                            <td>{{bus_number['Sapna sangita']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Nurani Nagar</td>
+                            <td>{{bus_number['Nurani Nagar']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Pipliana Musakhedi</td>
+                            <td>{{bus_number['Pipliana Musakhedi']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Bangali</td>
+                            <td>{{bus_number['Bangali']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Aerodrum</td>
+                            <td>{{bus_number['Aerodrum']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Vidhyadham</td>
+                            <td>{{bus_number['Vidhyadham']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Kalani Nagar</td>
+                            <td>{{bus_number['Kalani Nagar']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Banganga</td>
+                            <td>{{bus_number['Banganga']}}</td>
+                          </tr>
+                          <tr>
+                            <td>Gandhi Nagar</td>
+                            <td>{{bus_number['Gandhi Nagar']}}</td>  
+                          </tr>
+                        </table>
+                    </div>
+                        
+                </section>
+                <style>
+                    table {
+                        align-items: center;
+                        width: 100%;
+                      border-collapse: collapse;
+                      margin: 2px;
+                      
+                      
+                    }
+                    
+                    tr {
+                      border-bottom: 1px solid #075ea0;
+
+                    }
+                    th{
+                        color: rgb(81, 0, 255);
+                        font-size: 35px;
+                        font-weight: 600;
+                        margin: 10px;
+                    }
+                    td{
+                        color: rgb(57, 90, 121);
+                        font-size: 25px;
+                        font-weight: 400;
+                        padding-left: 120px; 
+                        
+                        
+                    }
+                    .busboard{
+                        display: flex;
+                        justify-content: center;
+                        margin-right: 400px;
+                      margin-left: 400px;
+                        background: linear-gradient(60deg,#a9a4bc26,rgba(56, 100, 157, 0.161), rgba(68, 157, 171, 0.368));
+                        border-radius: 10px;
+                    }
+                    
+                    .shift{
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: rgb(165, 77, 200);
+                        margin-left: 1400px;
+                        margin-bottom: -35px;
+
+                      }
+                      .date{
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: rgb(165, 77, 200);
+                        margin-left: 300px;
+                        margin-bottom: 3px;
+                      }
+              
+                    
+
+                    @media only screen and (max-width: 1400px) {
+                        .busboard{
+                        margin-right: 200px;
+                      margin-left: 200px;
+                        }
+                        th{
+                      
+                        font-size: 35px;
+                        font-weight: 600;
+                        margin: 10px;
+                    }
+                    td{
+                        font-size: 25px;
+                        font-weight: 400;
+                        padding-left: 120px; 
+                        
+                        
+                    }
+                    }
+                    .shift{
+                        font-size: 22px;
+                        margin-left: 1200px;
+                        margin-bottom: -34px;
+
+                      }
+                      .date{
+                        font-size: 22px;     
+                        margin-left: 400px;
+                        margin-bottom: 2px;
+                      }
+
+                    @media only screen and (max-width: 950px) {
+                        .busboard{
+                        margin-right: 60px;
+                      margin-left: 60px;
+                        }
+                        th{
+                        
+                        font-size: 20px;
+                        font-weight: 600;
+                        
+                    }
+                    td{
+                        font-size: 15px;
+                        font-weight: 400;
+                        padding-left: 100px; 
+                        
+                        
+                    }
+                    .shift{
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-left: 780px;
+                        margin-bottom: -24px;
+
+                      }
+                      .date{
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-left: 200px;
+                        margin-bottom: 2px;
+                      }
+                    }
+
+                    @media only screen and (max-width: 650px) {
+                        .busboard{
+                        margin-right: 30px;
+                      margin-left: 30px;
+                        }
+                        th{
+                        color: rgb(0, 0, 0);
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin: 5px;
+                    }
+                    #bus-board{
+                      margin-top: 40px;
+                    }
+                    td{
+                        color: rgb(127, 153, 177);
+                        font-size: 10px;
+                        font-weight: 400;
+                        padding-left: 20px; 
+                        
+                        
+                    }
+                    .shift{
+                        font-size: 10px;
+                        font-weight: 400;
+                        margin-left: 230px;
+                        margin-bottom: -15px;
+
+                      }
+                      .date{
+                        font-size: 10px;
+                        font-weight: 400;
+                        margin-left: 45px;
+                        margin-bottom: 1px;
+                      }
+                }
+                    .bus-table{
+                        margin: 50px;
+                    }
+                    </style>
+                {% endblock %}

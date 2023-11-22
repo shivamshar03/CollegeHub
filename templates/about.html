@@ -1,0 +1,71 @@
+
+{% extends "layout.html" %}
+{% block body %}
+             <section id="About-about-me" class="features " style="padding-top: 10%">
+                    <div class="container" id="i18_about_me">
+                        <div id="heading" data-v-3721fc03>
+                            <h1 data-v-3721fc03>About Me</h1>
+                            <h2 data-v-3721fc03>About Me</h2>
+                        </div>
+
+
+                        <div class="heading-about">
+                            <img src="{{ url_for('static', filename='image/shivam.jpg')}}" height="150px" class="img-responsive " alt="">
+                            <h1 class="subtitle">Shivam Sharma</h1>
+                            <ul class="list-inline">
+                                <li style="padding: 2%">
+                                    <a title="Github" href="https://github.com/shivamshar03" target="blank">
+                                        <img class="about-icon" src="{{ url_for('static', filename='image/github.png')}}">
+                                    </a>
+                                </li>
+                                <li style="padding: 2%">
+                                    <a title="Facebook" href="https://www.instagram.com/shivam_shar_/" target="blank">
+                                        <img class="about-icon" src="{{ url_for('static', filename='image/instagram.png')}}">
+                                    </a>
+                                </li>
+                                <li style="padding: 2%">
+                                    <a title="Linkedin" href="https://www.linkedin.com/in/shivam-sharma-ab489721b/?originalSubdomain=in"
+                                        target="blank">
+                                        <img class="about-icon" src="{{ url_for('static', filename='image/linkedin.png')}}">
+                                    </a>
+                                </li>
+                                <li style="padding: 2%">
+                                    <a Title="Mail" href="mailto:shivamshar0310@gmail.com">
+                                        <img class="about-icon" src="{{ url_for('static', filename='image/gmail.png')}}">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="about-content" data-v-3721fc03>
+
+                            <p><span data-i18n="about_me.des ">In this age of increasing automation, programming is not
+                                    limited
+                                    to only computer science and related fields. Every competent engineer needs to know
+                                    how to
+                                    program. This makes coding club of SVVV one of the most important clubs in the
+                                    institute.</span></p>
+                            <p>In today's rapidly changing world, coding skills are essential for success in a
+                                variety of
+                                fields.
+                                A coding club of SVVV would provide students with the opportunity to learn and practice
+                                coding,
+                                network with other students who are interested in coding, and participate in coding
+                                competitions
+                                and hackathons.</p>
+
+
+                            <p>Unite, Innovate, learn Together: Our Club is a vibrant ecosystem where aspiring and
+                                seasoned
+                                coderscollaborate seamlessly, fuelled by the passion for technology. Together, we embark
+                                on
+                                a journey of continuous learning, transforming ideas into reality and pushing the
+                                boundaries
+                                of innovation, while nurturing a spirit of camaraderie and excellence.</p>
+                        </div>
+
+                    </div>
+                </section>
+                {% endblock %}
